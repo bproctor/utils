@@ -1,3 +1,9 @@
+This isn't anywhere near usable at the moment, so... don't try.
+
+Getting back into C programming after about 10 years.  I've missed old reliable.
+
+This is a set of unix utilies.  Basically writing them for fun and to relearn some C coding.  They're written as a single excutable with soft links to each of the function names.  In theory this should make it easier for code reuse rather than writing each command as it's own executable.  Some experimenting is in order to find the advantages and disadvantages of doing it this way.
+
 base64
 basename
 cal
