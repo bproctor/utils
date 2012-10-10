@@ -4,9 +4,16 @@
 #include "utils.h"
 
 static char *str_usage =
-	"Usage: wc [options] file\n"
-	"   -h    Print this help message\n"
-	"   -v    Version of this command";
+	"Usage: wc [options] [file ...]\n"
+	"\n"
+	"print lines, words, byte, and characters for files"
+	"\n"
+	"   -c          print the byte count\n"
+	"   -m          print the character count\n"
+	"   -l          print the line count\n"
+	"   -w          print the word count\n"
+	"   --help      Print this help message and exit\n"
+	"   --version	Print version information and exit\n";
 
 int command_wc(int argc, char **argv)
 {
