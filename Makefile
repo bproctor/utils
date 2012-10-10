@@ -15,3 +15,7 @@ utils: utils.o $(objs)
 
 clean:
 	rm -f *.o utils $(commands)
+
+test:
+	test/test.sh
+	
