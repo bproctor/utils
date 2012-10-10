@@ -1,6 +1,6 @@
 all: utils
 
-commands = cat head od tac tail yes
+commands = cat head od tac tail wc yes
 
 objs = $(foreach cmd,$(commands), $(cmd).o)
 
