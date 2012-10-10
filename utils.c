@@ -20,13 +20,18 @@ void version(void)
 
 int main(int argc, char **argv)
 {
-	int ret;
+	int ret = EXIT_FAILURE;
 
 	command_name = basename(argv[0]);
 	switch(*command_name) {
 		case 'c':
 			if (strcmp(command_name, "cat") == 0) {
 				ret = command_cat(argc, argv);
+			}
+			break;
+		case 'f':
+			if (strcmp(command_name, "false") == 0) {
+				ret = EXIT_FAILURE;
 			}
 			break;
 		case 'h':
@@ -44,6 +49,8 @@ int main(int argc, char **argv)
 				ret = command_tac(argc, argv);
 			} else if (strcmp(command_name, "tail") == 0) {
 				ret = command_tail(argc, argv);
+			} else if (strcmp(command_name, "true")) {
+				ret = EXIT_SUCCESS;
 			}
 			break;
 		case 'w':
