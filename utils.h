@@ -14,4 +14,5 @@ int  command_head (int, char**);
 int  command_od   (int, char**);
 int  command_tac  (int, char**);
 int  command_tail (int, char**);
+int  command_wc   (int, char**);
 int  command_yes  (int, char**);

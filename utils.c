@@ -46,6 +46,11 @@ int main(int argc, char **argv)
 				ret = command_tail(argc, argv);
 			}
 			break;
+		case 'w':
+			if (strcmp(command_name, "wc") == 0) {
+				ret = command_wc(argc, argv);
+			}
+			break;
 		case 'y':
 			if (strcmp(command_name, "yes") == 0) {
 				ret = command_yes(argc, argv);
