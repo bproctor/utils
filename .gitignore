@@ -1,0 +1,11 @@
+.DS_Store
+*.o
+
+cat
+head
+od
+tac
+tail
+utils
+wc
+yes
